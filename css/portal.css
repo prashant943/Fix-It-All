@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+	--color-primary: rgb(54, 21, 0);
+	--color-primary-dark: rgb(28, 10, 0);
+	--color-secondary: rgb(96, 54, 1);
+	--color-error: #bb0000;
+	--color-success: #038d21;
+	--border-radius: 6px;
+}
+
+.header {
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+nav {
+	display: flex;
+	padding: 1% 2%;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-links {
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.nav-links ul li::after {
+	content: "";
+	width: 0%;
+	height: 4px;
+	background: #cc9544;
+	display: block;
+	margin: auto;
+	transition: 0.2s;
+}
+.nav-links ul li:hover::after {
+	width: 100%;
+}
+
+.count{
+	text-align: center;
+	font-size: 4em;
+}
+
+.row{
+    padding-bottom: 20px;
+}
+
+.card-body p{
+	font-size: 20px;
+}
+
+#total-orders{
+    background-color: initial;
+}
+
+#orders-delivered{
+    background-color: initial;
+}
+
+#orders-pending{
+    background-color: initial;
+}
